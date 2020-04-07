@@ -59,6 +59,14 @@ class AmqpContext implements InteropAmqpContext, DelayStrategyAware
         $this->connection = $connection;
     }
 
+     /**
+     * @return mixed[]
+     */
+    public function getConfig(): array 
+    {
+        return $this->config;
+    }
+
     /**
      * @return InteropAmqpMessage
      */
